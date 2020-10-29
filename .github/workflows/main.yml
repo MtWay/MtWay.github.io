@@ -13,4 +13,5 @@ jobs:
     - name: Install JS dependencies
       run: npm install
     - name: Test
-      run: npm run docs:build
+      run: npm run dev
+#       run: npm run docs:build
