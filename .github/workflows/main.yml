@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - uses: c-hive/gha-npm-cache@v1
+
+    - name: Install JS dependencies
+      run: npm install
+    - name: Test
+      run: npm run docs:build
