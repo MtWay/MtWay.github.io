@@ -24,8 +24,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: npm i
-        run: npm i
+        run: cd .. && npm i
 
       # Runs a set of commands using the runners shell
       - name: npm run docs:build
-        run: npm run dev
+        run: cd .. && npm run dev
