@@ -28,4 +28,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: npm run docs:build
-        run: npm run docs:build
+        run: npm run dev
